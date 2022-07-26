@@ -12,7 +12,7 @@
 // the average point you may add your point to the given array!
 
 
-
+//solution 1
 // create function
 function betterThanAverage (classPoints, yourPoints) {      
    // declare variable to add results to 
@@ -30,3 +30,4 @@ function betterThanAverage (classPoints, yourPoints) {
     }
 
 }
+
