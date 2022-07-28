@@ -13,6 +13,7 @@
 // return holiday / difference 
 // round down
 
+//solution 1
 
 function dutyFree(normPrice, discount, hol){
     let percent = discount / 100
