@@ -11,6 +11,8 @@
 //get sons age 
 //find common denominator 
 
+
+//solution 1
 function twiceAsOld(dadYearsOld, sonYearsOld) {
     return Math.abs(dadYearsOld - 2 * sonYearsOld);
   }
