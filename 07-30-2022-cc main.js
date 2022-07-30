@@ -4,7 +4,7 @@
 
 
 
-
+//solution 1
 function positiveSum(arr) {
     var total = 0;    
     for (i = 0; i < arr.length; i++) {    // setup loop to go through array of given length
