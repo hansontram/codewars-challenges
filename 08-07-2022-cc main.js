@@ -6,6 +6,7 @@
 // use parseInt
 // return
 
+/solution 1
 const stringToNumber = function(str){
     
     return parseInt(str)
