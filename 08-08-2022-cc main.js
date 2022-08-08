@@ -2,6 +2,7 @@
 
 // Return true if it is a factor or false if it is not.
 
+//solution 1
 function checkForFactor (base, factor) {
     if (base % factor === 0){
           return true
