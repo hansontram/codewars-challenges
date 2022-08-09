@@ -10,6 +10,7 @@
 //use replace method
 // replace vowels with !
 
+//solution 1
 function replace(s){
     return s.replace(/[aeoiu]/ig, '!')  
   }
