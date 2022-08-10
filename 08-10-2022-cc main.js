@@ -13,7 +13,7 @@
 // "Zach" --> 18
 
 
-//solution 1
+// solution 1
 function howManyLightsabersDoYouOwn(name) {
     if (name==='Zach'){
         return 18
