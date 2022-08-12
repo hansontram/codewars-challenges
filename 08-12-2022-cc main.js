@@ -2,6 +2,7 @@
 
 // String will never be empty and you do not need to account for different data types.
 
+//solution 1
 function findShort(s){
     let str = s.split(" ");
     let a = [];
