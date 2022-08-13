@@ -9,6 +9,7 @@
 // convert km per hour to cm per second 
 // round down with Math.floor
 
+//solution 1
 function cockroachSpeed(s) {
     return Math.floor(s * 27.777778)
   }
