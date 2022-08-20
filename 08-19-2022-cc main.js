@@ -28,4 +28,17 @@ function squareDigits(num){
   }
 
   //add date
-  fgdsgdsgdfsg
+  function squareDigits(num){
+    let splitNum = num.toString().split('')
+  //   console.log(splitNum)
+    for (let i=0; i < splitNum.length; i++){
+      Math.pow(splitNum[i],2)
+      splitNum[i] =  Math.pow(splitNum[i],2)
+      
+     console.log(splitNum[i])
+    
+    }
+   
+    return parseInt(splitNum.join(''))
+  }
+  
