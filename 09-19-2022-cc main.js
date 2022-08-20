@@ -26,3 +26,6 @@ function squareDigits(num){
    
     return parseInt(splitNum.join(''))
   }
+
+  //add date
+  fgdsgdsgdfsg
