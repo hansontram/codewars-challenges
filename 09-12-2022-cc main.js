@@ -1,21 +1,20 @@
-//P: a list, array 
-//R: return a list, array 
+//P: a list, array
+//R: return a list, array
 //E:  [1, 2, 3, 4]  -> [4, 3, 2, 1]
-//P: 
+//P:
 
 // set a variable with empty array
-// iterate through the array for loop 
+// iterate through the array for loop
 // push i into empty array]
-// return array 
+// return array
 
-function reverseList (list) {
-    let reverse = [];
-    for (let i = list.length-1; i >= 0; i--){
-        reverse.push(list[i])
-    }
-    return reverse
+function reverseList(list) {
+  let reverse = [];
+  for (let i = list.length - 1; i >= 0; i--) {
+    reverse.push(list[i]);
+  }
+  return reverse;
 }
-
 
 // Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
 
@@ -28,36 +27,58 @@ function reverseList (list) {
 
 //P: strings
 //R: Strings
-//E: 
+//E:
 //P:
 
 // declare variable with empty string
 // use .split method to split string up into arrays
 // iterate through array with for loop
 // .toUppercase [0]
-// push to empty string and use .join method 
-// return string 
+// push to empty string and use .join method
+// return string
 
 //solution 1
-String.prototype.toJadenCase = function () { 
-    let str = this
-    return str.split(" ").map(function(word){
+String.prototype.toJadenCase = function () {
+  let str = this;
+  return str
+    .split(" ")
+    .map(function (word) {
       return word.charAt(0).toUpperCase() + word.slice(1);
-    }).join(" ");
-  }
-  
-  //solution 2
-  String.prototype.toJadenCase = function() {
-    return this.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ')
-  };
+    })
+    .join(" ");
+};
 
+//solution 2
+String.prototype.toJadenCase = function () {
+  return this.split(" ")
+    .map((item) => item[0].toUpperCase() + item.slice(1))
+    .join(" ");
+};
 
 // Attempt
-  String.prototype.toJadenCase = function () {
-    let str = this;
-    let result = ""
-   let newStr= this.split(" ")
-   for (let i=0; i<=newStr.length;i++){
-     console.log(newStr[i][0].toUppercase())
-   }
-  };
+String.prototype.toJadenCase = function () {
+  let str = this;
+  let result = "";
+  let newStr = this.split(" ");
+  for (let i = 0; i <= newStr.length; i++) {
+    console.log(newStr[i][0].toUppercase());
+  }
+};
+
+//my solution
+String.prototype.toJadenCase = function () {
+  let str = this;
+  let result = "";
+  let newStr = this.split(" ");
+
+  for (let i = 0; i < newStr.length; i++) {
+    let capWord = newStr[i][0].toUpperCase() + newStr[i].slice(1);
+    if (result.length === 0) {
+      result += capWord;
+    } else {
+      result += " " + capWord;
+    }
+  }
+
+  return result;
+};
