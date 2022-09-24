@@ -55,4 +55,4 @@ function multipleOfIndex(array) {
   //conditional if (array[i] % i ===0)
   //push array[i] to empty array 
   // return array 
-  
+  ss
