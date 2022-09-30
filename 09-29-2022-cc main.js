@@ -21,7 +21,7 @@ function factorial(n){
     for (let i=1; i<=n;i++){
       result = i * n
     }
-    return multiply
+    return result
   }
   
 
