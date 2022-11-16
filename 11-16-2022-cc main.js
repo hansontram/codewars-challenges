@@ -1,31 +1,35 @@
-//string
-//string w multiples
+You will be given a list of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
 
-abcd -> a-Bb-Ccc-Dddd
+The returned value must be a string, and have "***" between each of its letters.
 
-//decalre var with empty array 
-//decalre var with .toLowerCase
-//for loop through lowercase
-//declare var holding uppercase
-//for loop 
-//adding to empty array 
-//
+You should not remove or add elements from/to the array.
+ß
 
 
-function mumbling (str){
-   let result = []
-   let lowerStr = str.toLowerCase()
-   for(let i=0;i<lowerStr.length;i++){
-    let str = lowerStr[i].toUpperCase()
-    for (let j=0; j=i;i++){
-        str += lowerStr[i]
-    }
-    result.push(str)
-   }
-   return result.join("-")
-}
 
 
-function mumble (str){
-    return str.split("").map((c,i)=> (c.toUpperCase() + c.toLowerCase().repeat(i))).join("-")
-}
+//my solution 
+function twoSort(s) {
+    let alpha = s.sort((a,b) => a-b)
+   return alpha[0].split("").join("***")
+  }
+  
+  
+  //list of strings
+  // string 
+  
+  //sort alphabetically 
+  //first element 
+  //add *** between 
+
+
+
+//correct solution 
+  function twoSort(s) {
+    let alpha = s.sort()
+    return alpha[0].split("").join("***")
+    
+   
+  }
+  
+  
