@@ -16,7 +16,7 @@ function findLongest(array){
   }
 
 
-  
+
 
   function findLongest(array){
     var newArr = array.map(function(element) {
@@ -27,3 +27,4 @@ function findLongest(array){
     })
     return parseInt(newArr[0])
     }
+    
